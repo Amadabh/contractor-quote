@@ -73,12 +73,12 @@ export default function Dashboard() {
           <div 
             onClick={() => setShowHeatmap((prev) => !prev)}
             className={`rounded-2xl w-1/2 place-items-center place-content-center hover:cursor-pointer transition-all duration-400 ease-in-out ${showHeatmap ? "bg-blue-200 z-20" : "bg-gray-200"}`}>
-              <p className='font-semibold text-gray-800'>Heat Map</p>
+              <p className='font-semibold text-gray-800 text-center'>Heat Map</p>
           </div>
           <div
             onClick={() => setShowHeatmap((prev) => !prev)}
             className={`ml-[-24px] rounded-2xl w-1/2 place-items-center place-content-center hover:cursor-pointer transition-all duration-400 ease-in-out ${!showHeatmap ? "bg-blue-200 z-20" : "bg-gray-200"}`}>
-              <p className='font-semibold text-gray-800'>Summary</p>
+              <p className='font-semibold text-gray-800 text-center'>Summary</p>
           </div>
         </div>
 

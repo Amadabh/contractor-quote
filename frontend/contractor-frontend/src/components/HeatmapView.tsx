@@ -10,7 +10,7 @@ export default function HeatmapView() {
   const [points, setPoints] = useState<number[][]>([]);
 
   useEffect(() => {
-    fetch('http://localhost:8787/heatmap')
+    fetch(`${import.meta.env.VITE_BASE_URL}/heatmap`)
       .then(res => res.json())
       .then((data) => {
         const mapped = Object.entries(data)
